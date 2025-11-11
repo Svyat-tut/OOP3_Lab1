@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LR_One
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Лабораторная работа №1. Разработка консольного приложения\n");
+            Console.WriteLine("Индивидуальное задание №1.1");
+            Console.WriteLine("·Имя: Горбачев Святослав Антонович");
+            Console.WriteLine("·Группа ИДБ-23-01, специальность 09.03.01");
+            Console.WriteLine("·Дата рождения: 07.02.2006");
+            Console.WriteLine("·Место жительства: г.Москва\n Место рождения: г.Саратов");
+            Console.WriteLine("·Любимый предмет в школе: Алгебра/Информатика");
+            Console.WriteLine("·Увлечения: Люблю читать книги, в основном фантастику. Увлекаюсь баскетболом и велоспортом.\n");
+            Console.WriteLine("Индивидуальное задание №1.2");
+            Console.WriteLine("c = g*h + b*q*3 - x + y/w");
+            double g = 5, h = 12, b = 10, q = 9, x = 45, y = 826, w = 51;
+            double c = g*h + b*q*3 - x + y/w;
+            Console.WriteLine("\nЗначения переменных:");
+            Console.WriteLine("g = {0}, h = {1}, b = {2}, q = {3}, x = {4}, y = {5}, w = {6}\n", g, h, b, q, x, y, w);
+            Console.WriteLine("c = {0}*{1} + {2}*{3}*3 - {4} + {5}/{6} = {7}", g, h, b, q, x, y, w, Math.Round(c, 3));
+        }
+    }
+}
