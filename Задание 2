@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+
+namespace LR_One
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Лабораторная работа №1.2 - Перенаправление потоков ввода-вывода\n");
+            double a1, a2, a3, a4, a5, max = Math.Pow(10, 5);
+            a1 = Convert.ToDouble(Console.ReadLine());
+            a2 = Convert.ToDouble(Console.ReadLine());
+            a3 = Convert.ToDouble(Console.ReadLine());
+            a4 = Convert.ToDouble(Console.ReadLine());
+            a5 = Convert.ToDouble(Console.ReadLine());
+            if (a1 < 0 || a2 < 0 || a3 < 0 || a4 < 0 || a5 < 0 || a1 > max || a2 > max || a3 > max || a4 > max || a5 > max)
+            {
+                Console.WriteLine("ERROR");
+                Console.WriteLine("Значения должны быть в промежутке от 0 до 10^5!");
+            }
+            else
+            {
+                if ((a2 - a5) > 0 && a2 != 0)
+                {
+                    double s = a1 * Math.Sqrt(a2 - a5) / a3;
+                    double k = Math.Sqrt(a3 / a1) * Math.Pow(a2, 2);
+                    Console.WriteLine("S = {0} \nK = {1}", s, k);
+                }
+                else
+                {
+                    Console.WriteLine("Значение под корнем должно быть положительным!");
+                    Console.WriteLine("Знаменатель дроби должен быть отличен от нуля!");
+                }
+            }
+        }
+}
+
+!!! ССЫЛКА НА БЛОК-СХЕМУ !!!
